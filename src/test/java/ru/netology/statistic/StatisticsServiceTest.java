@@ -3,8 +3,6 @@ package ru.netology.statistic;
 import org.junit.jupiter.api.Test;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvFileSource;
 
 public class StatisticsServiceTest {
 
@@ -22,12 +20,12 @@ public class StatisticsServiceTest {
     }
 
     @Test
-    void findMax2() {
+    void findMaxInAnotherArray() {
 
         StatisticsService service = new StatisticsService();
 
-        long[] incomes = {5, 5, 8, 4, 5, 3, 8, 6, 11, 11, 12};
-        long expected = 12;
+        long[] incomes = {2, 6, 5, 7, 8, 3, 12, 8, 20, 1, 2};
+        long expected = 20;
 
         long actual = service.findMax(incomes);
 
